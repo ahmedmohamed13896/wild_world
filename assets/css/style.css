@@ -1,0 +1,632 @@
+
+/*general style*/
+@font-face {
+font-family: "Brandon Printed Double";
+src: url("../fonts/HVD Fonts - Brandon Printed Double.ttf") format("truetype");
+}
+@font-face {
+font-family: "Brandon Printed Extras";
+src: url("../fonts/HVD Fonts - Brandon Printed Extras.ttf") format("truetype");
+}
+@font-face {
+font-family: "Brandon Printed Inline";
+src: url("../fonts/HVD Fonts - Brandon Printed Inline.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "Brandon Printed One Shadow";
+src: url("../fonts/HVD Fonts - Brandon Printed One Shadow.ttf") format("truetype");
+}
+@font-face {
+font-family: "Brandon Printed One";
+src: url("../fonts/HVD Fonts - Brandon Printed One.ttf") format("truetype");
+}
+@font-face {
+font-family: "Brandon Printed Shadow";
+src: url("../fonts/HVD Fonts - Brandon Printed Shadow.ttf") format("truetype");
+}
+@font-face {
+font-family: "Brandon Printed Two Shadow";
+src: url("../fonts/HVD Fonts - Brandon Printed Two Shadow.ttf") format("truetype");
+}
+@font-face {
+font-family: "Brandon Printed Two";
+src: url("../fonts/HVD Fonts - Brandon Printed Two.ttf") format("truetype");
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-family: serif;
+}
+.h2{
+  font-size: 24px;
+}
+.h1{
+  color: #c6ab67;
+  font-family: "Brandon Printed One",sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.main-button{
+  display: block;
+  margin: 40px auto 30px;
+  background: #8a2220;
+  color: #ffffffd6;
+  font-family: "Brandon Printed Two Shadow";
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 15px;
+  max-width: 380px;
+  text-align: center;
+}
+.main-button:hover{
+  color: #ffffffd6;
+  text-decoration: none;
+}
+
+
+/* top div */
+.top-div{
+  background: #c6ab67;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  line-height: 1.2;
+}
+.top-div .h2{
+  font-style: normal;
+  font-family: "Brandon Printed Double", sans-serif;
+  margin-bottom: 0;
+}
+.top-div .top-text{
+  font-size: 26px;
+  margin-bottom: 0;
+}
+.top-div .close{
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  display: block;
+  color: #000;
+  font-size: 22px !important;
+}
+/*main-nav*/
+
+.main-nav{
+  background: #000 !important;
+}
+#topNavLinks{
+  text-align: center;
+}
+#topNavLinks .nav-links >a{
+  color: #FFF;
+  text-align: center;
+  font-family: serif;
+  cursor: pointer;
+  padding: 10px 23px 0;
+  transition: all .3s ease-in-out;
+}
+#topNavLinks .nav-links >a:hover,
+#topNavLinks .nav-links >a.active{
+  color: #c6ab67;
+}
+#topNavLinks .nav-links .search{
+  position: relative;
+  padding: 10px;
+}
+#topNavLinks .nav-links .search i{
+  color: #FFF;
+  width: 60px;
+  display: block;
+  transition: all .3s ease-in-out;
+  margin: 0 auto;
+  font-size: 22px;
+  padding-top: 5px;
+}
+#topNavLinks .nav-links .search i:hover{
+  cursor: pointer;
+}
+/*header*/
+.home-header{
+  padding: 35px 10px;
+  position: relative;
+  background: url('../img/home-header-background.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-header .larry-img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 35%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.home-header .larry-img img{
+  width: 100%;
+  position: relative;
+  left: -30px;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+}
+
+.home-header .header-content{
+  z-index: 2;
+  max-width: 400px;
+  color: #FFF;
+}
+.home-header .home-img{
+  width: 100%;
+}
+.home-header .header-content .h2{
+  text-transform: uppercase;
+  font-family: "Brandon Printed Two Shadow";
+  color: #FFF;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.home-header .header-content .h2 span{
+  font-family: "Brandon Printed Inline";
+  font-size: 25px;
+}
+.home-header .header-content .sign-up{
+  display: block;
+  margin: 40px auto 30px;
+  background: #8a2220;
+  color: #ffffffd6;
+  font-family: "Brandon Printed Two Shadow";
+  text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 15px;
+  max-width: 95%;
+}
+@media (max-width:991px) {
+  .home-header .larry-img{
+    display: none;
+  }
+}
+
+/*as-seen*/
+.as-seen{
+  padding: 30px 0;
+}
+.as-seen .h1{
+  color: #c26457;
+  margin-bottom: 30px;
+  font-family: serif;
+}
+.as-seen .logos{
+  margin: 0;
+}
+.as-seen .logos .logo-img{
+  width: auto;
+  height: 105px;
+  margin: 0px auto 25px;
+}
+.as-seen .logos .logo-img img{
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width:575px) {
+  .as-seen .logos .logo-img{
+    height: auto;
+  }
+}
+/*blogs*/
+.blogs{
+  background: url('../img/recommended-wall.jpg') center center;
+  padding-top: 20px;
+  box-shadow: inset 0px 5px 30px 3px #969696;
+}
+.blogs .blog-post{
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.blogs .blog-post .blog-img{
+  margin: 50px auto 30px;
+}
+.blogs .blog-post .blog-img img{
+  border: 8px solid #c57750;
+  box-shadow: 0px 0px 13px 4px #6B6B6B;
+}
+.blogs .blog-post .blog-text{
+  font-size: 24px;
+  font-family: serif;
+  margin-bottom: 25px;
+  color: #396580;
+}
+
+/*history-class*/
+
+.history-class{
+  background: url('../img/history-class-background.jpg') center center;
+  padding: 50px 0 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history-class .h1{
+  color: #c6ab67;
+  font-family: "Brandon Printed One",sans-serif ;
+  font-size: 40px;
+}
+.history-class .class-content{
+  max-width: 860px;
+  margin: 40px auto;
+}
+.history-class .h-class-info{
+  font-size: 20px;
+  color: #e0e1cc;
+  padding: 10px;
+}
+.history-class .class-content .history-learn-more{
+  padding-top: 15px;
+}
+.history-class .class-content .learn-more-btn{
+  text-decoration: none;
+  color: #ffffffd6;
+}
+@media (max-width:991px) {
+  .history-class .h-class-info,
+  .history-class .history-learn-more{
+    margin: auto;
+    width: 98%;
+    text-align: center;
+  }
+}
+/* how-to-teach */
+.how-to-teach{
+  padding: 20px 0 0;
+}
+.how-to-teach .how-to-teach-book,
+.how-to-teach .parents{
+  margin: 10px 0;
+  padding: 20px 40px;
+}
+.how-to-teach .h1{
+  color: #c6ab67;
+  font-family: "Brandon Printed One",sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.how-to-teach .get-it-now{
+  text-decoration: none;
+  color: #ffffffd6;
+  margin-left: 0;
+}
+.how-to-teach .parents{
+  text-align: left;
+  max-width: 475px;
+}
+.how-to-teach .parents p{
+  color: #396580;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+@media (max-width:991px) {
+  .how-to-teach .parents{
+    margin: 10px auto;
+    text-align: center;
+  }
+  .how-to-teach .how-to-teach-book, .how-to-teach .parents{
+    padding: 10px;
+  }
+  .how-to-teach .get-it-now{
+    margin-left: auto;
+  }
+}
+
+/* webinar-chalkboard. */
+.webinar-chalkboard{
+  background: url('../img/webinar-chalkboard.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0 50px;
+}
+.webinar-chalkboard .h1{
+  color: #c6ab67;
+  font-family: "Brandon Printed One",sans-serif;
+  font-size: 35px;
+}
+
+/*history-books*/
+.history-books{
+  padding: 40px 20px 50px;
+  text-align: center;
+}
+.history-books .h1{
+  color: #c6ab67;
+  font-family: "Brandon Printed One",sans-serif;
+  font-size: 35px;
+}
+.history-books .want-more-text{
+  color: #396580;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.history-books .book .book-img{
+  height: 270px;
+  max-width: 405px;
+  margin: 5px auto;
+  position: relative;
+}
+.history-books .book .book-img .american-1{
+  position: absolute;
+  top: 15px;
+  right: 45%;
+  margin: 0 auto;
+  height: 185px;
+  width: 120px;
+}
+.history-books .book .book-img .american-2{
+  position: absolute;
+  top: 15px;
+  margin: 0 auto;
+  right: 25%;
+  transform: rotate(15deg);
+  height: 185px;
+  width: 120px;
+}
+.history-books .book .book-img img{
+  box-shadow: 0 0 15px 1px #6b6b6b;
+}
+.history-books .main-button{
+  padding: 7px;
+  font-size: 20px;
+  max-width: 250px;
+}
+.history-books .book{
+  margin: 30px auto;
+  padding: 10px;
+}
+.history-books .book .new-release{
+  color: #396580;
+  font-family: "Brandon Printed Double",sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 20px;
+}
+/*rockin*/
+
+.rockin{
+  padding: 30px 0;
+  background: url('../img/Rockin-wall-chalkboard.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rockin .rockin-left{
+  padding-top: 70px;
+}
+.rockin .rockin-left p{
+  color: #e0e1cc;
+  line-height: 1.7;
+  margin-left: 115px;
+  max-width: 440px;
+  font-size: 19px;
+}
+@media (max-width:991px) {
+  .rockin .rockin-left{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .rockin .rockin-left p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*recommended*/
+.recommended{
+  padding: 40px 0;
+  background: url('../img/recommended-wall.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recommended .h1{
+  color: #999;
+  font-family: "Brandon Printed Two Shadow", sans-serif;
+
+}
+.recommended .carousel-inner .carousel-item.active,
+.recommended .carousel-inner .carousel-item-next,
+.recommended .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.recommended .carousel-inner .carousel-item-right.active,
+.recommended .carousel-inner .carousel-item-next {
+  transform: translateX(33.3333333%);
+}
+
+.recommended .carousel-inner .carousel-item-left.active,
+.recommended .carousel-inner .carousel-item-prev {
+  transform: translateX(-33.3333333%);
+}
+
+.recommended .carousel-inner .carousel-item-right,
+.recommended .carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
+
+.recommended .carousel-inner .carousel-item img{
+  max-width: calc( 33.333333333% - 10% );
+  max-height: 400px;
+  margin: 10px 5%;
+  padding: 0;
+  border: 5px solid #c57750;
+  box-shadow: 1px 1px 11px 4px #6b6b6b;
+}
+
+@media (max-width:991px) {
+  .recommended .carousel-inner .carousel-item.active,
+  .recommended .carousel-inner .carousel-item-next,
+  .recommended .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  .recommended .carousel-inner .carousel-item-right.active,
+  .recommended .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+
+  .recommended .carousel-inner .carousel-item-left.active,
+  .recommended .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+
+  .recommended .carousel-inner .carousel-item-right,
+  .recommended .carousel-inner .carousel-item-left{
+    transform: translateX(0);
+  }
+  .recommended .carousel-inner .carousel-item img{
+    max-width: calc( 50% - 10% );
+    margin: 10px 5%;
+  }
+
+}
+@media (max-width:768px) {
+  .recommended .carousel-inner .carousel-item.active,
+  .recommended .carousel-inner .carousel-item-next,
+  .recommended .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  .recommended .carousel-inner .carousel-item-right.active,
+  .recommended .carousel-inner .carousel-item-next {
+    transform: translateX(100%);
+  }
+
+  .recommended .carousel-inner .carousel-item-left.active,
+  .recommended .carousel-inner .carousel-item-prev {
+    transform: translateX(-100%);
+  }
+
+  .recommended .carousel-inner .carousel-item-right,
+  .recommended .carousel-inner .carousel-item-left{
+    transform: translateX(0);
+  }
+  .recommended .carousel-inner .carousel-item img{
+    max-width: calc( 100% - 30% );
+    margin: 10px 15%;
+  }
+}
+
+  .recommended .carousel-control-next, .carousel-control-prev{
+  width: 10%;
+}
+  .recommended .carousel-control-prev-icon {
+  background-image: url('../img/prev-anchor.png');
+  height: 75px;
+  width: 35px;
+}
+.recommended .carousel-control-next-icon {
+    background-image: url('../img/next-anchor.png');
+    height: 75px;
+    width: 35px;
+}
+.recommended .slide{
+  max-width: 85%;
+  margin: 0 auto;
+}
+.recommended .carousel-control-prev {
+    left: -10%;
+}
+.recommended .carousel-control-next {
+    right: -10%;
+}
+.recommended .anchor-books{
+  margin-top: 80px;
+}
+.recommended .anchor-books .anchor-book{
+  max-width: 100px;
+  display: block;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+
+
+
+
+/*learn-more*/
+
+.learn-more{
+  background: url('../img/Rockin-wall-chalkboard.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 85px 0;
+}
+.learn-more .h1{
+  font-family: "Brandon Printed Two Shadow", sans-serif;
+}
+
+
+/*footer*/
+
+.footer{
+  background: #396580;
+  padding: 60px 0;
+}
+.footer .home-logo{
+  max-width: 300px;
+  display: block;
+}
+.footer .home-logo img{
+  margin: 0 auto;
+  display: block;
+  max-width: 220px;
+  margin-right: 0;
+}
+.footer .page-links{
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.footer .page-links >li{
+  display: inline-block;
+}
+.footer .page-links >li a{
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+  margin:20px 10px;
+  transition: all .3s ease-in-out;
+  font-family: serif;
+}
+.footer .page-links >li a:hover,
+.footer .page-links >li a.active{
+  color: #c6ab67;
+  text-decoration: none;
+}
+.footer .copyright{
+  color: #FFF;
+}
+@media (max-width:991px) {
+  .footer .home-logo{
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+  }
+  .footer .page-links{
+    text-align: center;
+  }
+  .footer .copyright{
+    margin: 10px auto;
+    text-align: center;
+  }
+  .footer .home-logo img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
