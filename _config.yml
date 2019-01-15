@@ -24,12 +24,34 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
+include: ['_pages']
+defaults:
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+assets:
+  sources:
+  - assets/css
+  - assets/img
+  - assets/js 
+  - assets/fonts 
+sass:
+    sass_dir: _sass
+    style: compressed
+exclude: []
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

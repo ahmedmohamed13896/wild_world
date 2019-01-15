@@ -4,20 +4,20 @@
       <div class="row no-gutters">
         <div class="col-lg-4 col-md-12">
           <a href="#" class="home-logo text-center">
-            <img class="img-fluid" src="assets/img/home-logo.png" alt="home-logo.png">
+            <img class="img-fluid" src="{{site.baseurl}}/assets/img/home-logo.png" alt="home-logo.png">
           </a>
         </div>
         <div class="col-lg-8 col-md-12">
           <ul class="list-unstyled page-links">
             <li><a href="/">Home</a> </li>
-            <li><a href="/about.html">About</a> </li>
-            <li><a href="/books.html">Books</a> </li>
-            <li><a href="/movies.html">Movies</a> </li>
-            <li><a href="/cources.html">Courses</a> </li>
-            <li><a href="/events.html">Events</a> </li>
-            <li><a href="/resources.html">Resources</a> </li>
-            <li><a href="/blog.html">Blog</a> </li>
-            <li><a href="/sign-up.html">Sign Up/ Login</a> </li>
+            <li><a href="/pages/about.html">About</a> </li>
+            <li><a href="/pages/books.html">Books</a> </li>
+            <li><a href="/pages/movies.html">Movies</a> </li>
+            <li><a href="/pages/cources.html">Courses</a> </li>
+            <li><a href="/pages/events.html">Events</a> </li>
+            <li><a href="/pages/resources.html">Resources</a> </li>
+            <li><a href="/blogs/blog.html">Blog</a> </li>
+            <li><a href="/pages/sign-up.html">Sign Up/ Login</a> </li>
           </ul>
           <p class="copyright">Copyright • Privacy Policies</p>
         </div>
@@ -29,10 +29,8 @@
   </footer>
   <!-- End Footer -->
 
-  <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{site.baseurl}}/assets/js/main.js"></script>
 
-
-</body>
-</html>
